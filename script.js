@@ -1,3 +1,4 @@
+let weatherCondition = data.weather[0].main.toLowerCase();
 
   function getWeather() {
     const city = document.getElementById("cityInput").value;
@@ -32,6 +33,25 @@
 
         document.getElementById("mainIcon").style.display = "block";
         document.getElementById("mainIcon").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+
+
+        let weatherCondition = data.weather[0].main.toLowerCase();
+        let overlay = document.getElementById("weatherOverlay");
+
+        // Reset pehle
+        overlay.className = "overlay";  // sab purani class hata do
+
+        if (weatherCondition.includes("clear")) {
+          overlay.classList.add("sunny-anim");
+        } else if (weatherCondition.includes("cloud")) {
+          overlay.classList.add("cloudy-anim");
+        } else if (weatherCondition.includes("rain")) {
+          overlay.classList.add("rainy-anim");
+        } else {
+          overlay.classList.add("moderate-anim");
+        }
+
+        
 
       })
       .catch(error => {

@@ -11,6 +11,18 @@ body {
     justify-content: center;
     align-items: center;
   }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.0); /* Default transparent */
+    transition: background 1s ease;
+    z-index: -1;
+  }
+  
   
       
 
@@ -68,3 +80,47 @@ h2{
     margin-bottom: 5px;
   }
   
+
+ /* Sunny Animation */
+.sunny-anim {
+  animation: sunnyPulse 3s ease-in-out infinite;
+}
+
+@keyframes sunnyPulse {
+  0%   { background: rgba(255, 223, 0, 0.4); }
+  50%  { background: rgba(255, 200, 0, 0.6); }
+  100% { background: rgba(255, 223, 0, 0.4); }
+}
+
+/* Cloudy Animation */
+.cloudy-anim {
+  animation: cloudyPulse 3s ease-in-out infinite;
+}
+
+@keyframes cloudyPulse {
+  0%   { background: rgba(160,160,160,0.4); }
+  50%  { background: rgba(130,130,130,0.6); }
+  100% { background: rgba(160,160,160,0.4); }
+}
+
+/* Rainy Animation */
+.rainy-anim {
+  animation: rainyPulse 3s ease-in-out infinite;
+}
+
+@keyframes rainyPulse {
+  0%   { background: rgba(50,50,50,0.5); }
+  50%  { background: rgba(30,30,30,0.7); }
+  100% { background: rgba(50,50,50,0.5); }
+}
+
+/* Moderate Animation */
+.moderate-anim {
+  animation: moderatePulse 3s ease-in-out infinite;
+}
+
+@keyframes moderatePulse {
+  0%   { background: rgba(220,220,220,0.3); }
+  50%  { background: rgba(200,200,200,0.5); }
+  100% { background: rgba(220,220,220,0.3); }
+}
