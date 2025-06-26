@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+      
+
+  #mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+  }
+  #input {
+    width: 120vh;
+    margin-top: 50px;
+  }
+  .search{
+    background-color: #313940 !important;
+  }
+h1{
+    margin-left: 20vh;
+    color: white !important;
+}
+
+
+h2{
+    font-weight: bold;
+}
+#currentWeather{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.btn-ac{
+    background-color: #313940 !important ;
+    color: white !important;
+}
+   #forecast {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  } 
+  
+  .forecastCard {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+    width: 120px;
+    color: white;
+  }
+  
+  .forecastCard img {
+    width: 70px;
+    margin-bottom: 5px;
+  }
+  
